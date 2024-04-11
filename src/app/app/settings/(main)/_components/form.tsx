@@ -47,8 +47,8 @@ export function ProfileForm({ defaultValues }: ProfileFormProps) {
     router.refresh()
 
     toast({
-      title: 'Success',
-      description: 'Profile updated successfully.'
+      title: 'Sucesso',
+      description: 'Perfil atualizado com sucesso.'
     })
   })
 
@@ -57,17 +57,17 @@ export function ProfileForm({ defaultValues }: ProfileFormProps) {
       <form onSubmit={onSubmit} className="space-y-8">
         <Card>
           <CardHeader>
-            <CardTitle>Name</CardTitle>
-            <CardDescription>This will be your name.</CardDescription>
+            <CardTitle>Nome</CardTitle>
+            <CardDescription>Este será o seu nome.</CardDescription>
             <CardContent>
               <FormField
                 control={form.control}
                 name="name"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>Name</FormLabel>
+                    <FormLabel>Nome</FormLabel>
                     <FormControl>
-                      <Input placeholder="Enter your name" {...field} />
+                      <Input placeholder="Digite seu nome" {...field} />
                     </FormControl>
 
                     <FormMessage />
@@ -82,7 +82,7 @@ export function ProfileForm({ defaultValues }: ProfileFormProps) {
           <CardHeader>
             <CardTitle>Email</CardTitle>
             <CardDescription>
-              For email changes, contact us at contact@micro-saas.com
+              Para alterações de email, entre em contato conosco em contact@micro-saas.com
             </CardDescription>
             <CardContent>
               <FormField
@@ -93,7 +93,7 @@ export function ProfileForm({ defaultValues }: ProfileFormProps) {
                     <FormLabel>Email</FormLabel>
                     <FormControl>
                       <Input
-                        placeholder="Enter your email"
+                        placeholder="Digite seu email"
                         readOnly
                         {...field}
                       />
@@ -105,7 +105,6 @@ export function ProfileForm({ defaultValues }: ProfileFormProps) {
             </CardContent>
           </CardHeader>
         </Card>
-
         <SheetFooter>
           <Button disabled={form.formState.isLoading} type="submit">
             {form.formState.isSubmitting && 'Saving...'}
