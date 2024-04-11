@@ -22,19 +22,19 @@ export function SettingsSidebar() {
             href="/app/settings"
             active={isActive('/app/settings')}
           >
-            My profile
+            Meu perfil
           </SidebarNavLink>
           <SidebarNavLink
             href="/app/settings/theme"
             active={isActive('/app/settings/theme')}
           >
-            Theme
+            Aparência
           </SidebarNavLink>
           <SidebarNavLink
             href="/app/settings/billing"
             active={isActive('/app/settings/billing')}
           >
-            Billing
+            Assinatura
           </SidebarNavLink>
         </SidebarNavMain>
       </SidebarNav>
