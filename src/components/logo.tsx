@@ -1,5 +1,5 @@
 import { cn } from '@/lib/utils'
-import { RocketIcon } from '@radix-ui/react-icons'
+import { RocketIcon, TimerIcon } from '@radix-ui/react-icons'
 
 export type LogoProps<T = any> = {
   className?: string
@@ -13,7 +13,7 @@ export function Logo({ className }: LogoProps) {
         className
       ])}
     >
-      <RocketIcon
+      <TimerIcon
         className='text-primary-foreground'
       />
     </div>
