@@ -73,6 +73,18 @@ const config = {
         "accordion-up": "accordion-up 0.2s ease-out",
       },
     },
+    backgroundImage: {
+      'small-dots': 'radial-gradient(circle, black 0.5px, transparent 1.1px)',
+      'small-dots-dark': 'radial-gradient(circle, white 0.5px, transparent 1.1px)',
+    },
+    backgroundSize: {
+      'dots-pattern': '90px 90px',
+    },
+  },
+  variants: {
+    extend: {
+      backgroundImage: ['dark'],
+    },
   },
   plugins: [require("tailwindcss-animate")],
 } satisfies Config
